@@ -1,0 +1,131 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
+
+/* HEADER */
+header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    z-index: 10;
+}
+
+header h1 {
+    color: #ff2e2e;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #ff2e2e;
+}
+
+/* BACKGROUND */
+.beranda {
+    min-height: 100vh;
+    background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e') center/cover no-repeat;
+    position: relative;
+    padding: 120px 20px 50px;
+}
+
+.beranda::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+    top: 0;
+    left: 0;
+}
+
+/* CONTAINER */
+.about-container {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    margin: auto;
+    padding: 30px;
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    color: #fff;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+}
+
+.about-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.about-container h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #ff2e2e;
+}
+
+.about-container p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.about-container ul {
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+
+.about-container ul li {
+    margin-bottom: 5px;
+}
+
+/* SOCIAL */
+.social {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.social img {
+    width: 30px;
+    transition: 0.3s;
+}
+
+.social img:hover {
+    transform: scale(1.2);
+}
+
+/* CLOSING */
+.closing {
+    margin-top: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* FOOTER */
+footer {
+    padding: 20px;
+    text-align: center;
+    background: #000;
+    color: #fff;
+    border-top: 1px solid #222;
+    font-size: 12px;
+}
