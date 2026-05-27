@@ -63,16 +63,18 @@ nav a:hover {
     z-index: 2;
     max-width: 1100px;
     margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 kolom */
+    gap: 25px;
 }
 
 .paket-container h2 {
+    grid-column: 1 / -1;
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
     font-size: 30px;
     color: #fff;
-    grid-column: 1 / -1; /* biar judul full di atas */
 }
-
 /* GRID KATALOG */
 .paket-container {
     display: grid;
@@ -88,6 +90,12 @@ nav a:hover {
     position: relative;
     transition: 0.3s;
     box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+}
+.paket-card:last-child {
+    grid-column: 1 / -1;
+    max-width: 50%;
+    margin: 0 auto;
+    width: 100%;
 }
 
 .paket-card:hover {
