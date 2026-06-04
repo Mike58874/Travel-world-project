@@ -127,3 +127,56 @@ nav a:hover {
     background: #1877f2;
     color: #fff;
 }
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 15px;
+        position: relative;
+        background: #000;
+        align-items: center; /* Menjaga judul/logo tetap di tengah */
+    }
+
+    header h1 {
+        margin-bottom: 15px;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    /* Merapikan susunan Navigasi di halaman Login */
+    nav {
+        display: flex;
+        flex-wrap: wrap;       /* Membuat menu otomatis turun rapi jika ruang tidak cukup */
+        justify-content: center; /* Menjaga semua link menu tetap berada di tengah */
+        gap: 12px;             /* Memberikan jarak yang konsisten dan pas antar menu */
+        width: 100%;
+    }
+
+    nav a {
+        margin: 0;             /* Margin direset karena jarak sudah diatur oleh 'gap' di atas */
+        font-size: 13px;
+        padding: 6px 10px;     /* Memberi ruang sentuh yang lebih nyaman di HP/Tablet */
+    }
+
+    /* Penyesuaian khusus untuk Container / Form Login agar pas di layar kecil */
+    .login-container {
+        width: 85%;            /* Membuat form lebih fleksibel dan tidak terlalu sempit */
+        max-width: 400px;
+        padding: 25px 20px;
+        margin: 40px auto;     /* Memberikan jarak atas dan bawah agar posisinya pas */
+    }
+
+    .login-container h2 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .input-group input {
+        padding: 10px;         /* Ukuran inputbox yang pas untuk ditekan jari */
+    }
+
+    .btn-login {
+        padding: 12px;
+        font-size: 14px;
+    }
+}

@@ -164,3 +164,66 @@ footer {
     border-top: 1px solid #222;
     font-size: 12px;
 }
+
+@media screen and (max-width: 768px) {
+    header {
+        padding: 20px;
+        flex-direction: column;
+        gap: 15px;
+        position: relative; /* Mengubah posisi agar tidak menutupi teks beranda di layar kecil */
+        background: #000;
+    }
+
+    header h1 {
+        font-size: 18px;
+    }
+
+    nav a {
+        margin: 0 8px;
+        font-size: 13px;
+    }
+
+    .beranda {
+        height: auto;
+        padding: 100px 20px 60px 20px; /* Menyesuaikan padding atas karena header berubah posisi */
+        text-align: center;
+        justify-content: center;
+    }
+
+    .beranda-text h2 {
+        font-size: 40px;
+    }
+
+    .rekomendasi, .about {
+        padding: 40px 20px;
+    }
+
+    .card {
+        width: 45%; /* Menampilkan 2 kartu per baris pada tablet */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    nav a {
+        margin: 0;
+    }
+
+    .beranda-text h2 {
+        font-size: 32px;
+    }
+
+    .card {
+        width: 100%; /* Menampilkan 1 kartu per baris (penuh) pada handphone */
+    }
+
+    .card:hover {
+        transform: scale(1.05); /* Mengurangi skala hover agar tidak terpotong di layar HP */
+    }
+}
