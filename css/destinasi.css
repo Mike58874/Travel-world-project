@@ -175,7 +175,7 @@ nav a:hover {
         padding: 15px;
         position: relative;
         background: #000;
-        align-items: center; /* Memastikan logo/judul header berada di tengah */
+        align-items: center; 
     }
 
     header h1 {
@@ -184,12 +184,11 @@ nav a:hover {
         text-align: center;
     }
 
-    /* Merapikan susunan Navigasi agar teratur dan simetris */
-    nav {
+    
         display: flex;
-        flex-wrap: wrap;       /* Membuat menu otomatis turun rapi jika space tidak cukup */
-        justify-content: center; /* Menjaga semua menu tetap di tengah */
-        gap: 12px;             /* Memberikan jarak yang konsisten antar menu navigasi */
+        flex-wrap: wrap;       
+        justify-content: center; 
+        gap: 12px;             
         width: 100%;
     }
 
@@ -205,23 +204,21 @@ nav a:hover {
 
     .container h2 {
         font-size: 26px;
-        text-align: center;    /* Judul halaman destinasi otomatis di tengah agar estetik */
+        text-align: center;   
         margin-bottom: 20px;
     }
 
-    /* Penyesuaian Layout Destinasi (Pengganti Tabel) */
+    
     .destinasi-container {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 20px;             /* Jarak antar kartu destinasi */
+        gap: 20px;           
     }
 
-    /* Mengatur agar kartu destinasi tampil 2 kolom di tablet */
     .card {
-        width: calc(50% - 20px); /* Membagi 2 kolom dikurangi ruang gap */
-        min-width: 250px;        /* Mencegah kartu terlalu mengecil */
-    }
+        width: calc(50% - 20px); 
+        min-width: 250px;        
 }
 /* FOOTER */
 footer {

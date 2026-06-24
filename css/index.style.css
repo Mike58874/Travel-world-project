@@ -170,7 +170,7 @@ footer {
         padding: 20px;
         flex-direction: column;
         gap: 15px;
-        position: relative; /* Mengubah posisi agar tidak menutupi teks beranda di layar kecil */
+        position: relative; 
         background: #000;
     }
 
@@ -185,7 +185,7 @@ footer {
 
     .beranda {
         height: auto;
-        padding: 100px 20px 60px 20px; /* Menyesuaikan padding atas karena header berubah posisi */
+        padding: 100px 20px 60px 20px; 
         text-align: center;
         justify-content: center;
     }
@@ -199,7 +199,7 @@ footer {
     }
 
     .card {
-        width: 45%; /* Menampilkan 2 kartu per baris pada tablet */
+        width: 45%; 
     }
 }
 
@@ -220,10 +220,9 @@ footer {
     }
 
     .card {
-        width: 100%; /* Menampilkan 1 kartu per baris (penuh) pada handphone */
-    }
+        width: 100%; 
 
     .card:hover {
-        transform: scale(1.05); /* Mengurangi skala hover agar tidak terpotong di layar HP */
+        transform: scale(1.05); 
     }
 }
