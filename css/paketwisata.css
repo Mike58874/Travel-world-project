@@ -60,7 +60,7 @@ nav a:hover {
     max-width: 1100px;
     margin: auto;
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 kolom */
+    grid-template-columns: repeat(2, 1fr);
     gap: 25px;
 }
 
@@ -71,9 +71,10 @@ nav a:hover {
     font-size: 30px;
     color: #fff;
 }
+
 .paket-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 katalog per baris */
+    grid-template-columns: repeat(2, 1fr);
     gap: 25px;
 }
 
@@ -85,6 +86,7 @@ nav a:hover {
     transition: 0.3s;
     box-shadow: 0 10px 30px rgba(0,0,0,0.4);
 }
+
 .paket-card:last-child {
     grid-column: 1 / -1;
     max-width: 50%;
@@ -156,7 +158,6 @@ nav a:hover {
     font-size: 16px;
 }
 
-
 .paket-text button {
     width: 100%;
     padding: 10px;
@@ -171,6 +172,7 @@ nav a:hover {
 .paket-text button:hover {
     background: #cc0000;
 }
+
 @media (max-width: 768px) {
     header {
         flex-direction: column;
@@ -203,7 +205,7 @@ nav a:hover {
     }
 
     table {
-        min-width: 500px; 
+        min-width: 500px;
         font-size: 14px;
     }
 
@@ -211,6 +213,7 @@ nav a:hover {
         padding: 10px 8px;
     }
 }
+
 footer {
     padding: 20px;
     text-align: center;
